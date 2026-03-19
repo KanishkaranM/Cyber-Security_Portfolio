@@ -1,0 +1,103 @@
+@import "tailwindcss";
+
+@theme {
+  --font-mono: "JetBrains Mono", monospace;
+  --color-cyber-black: #020202;
+  --color-cyber-dark: #0a0a0a;
+  --color-cyber-gray: #121212;
+  --color-cyber-green: #00ff41;
+  --color-cyber-cyan: #00f3ff;
+  --color-cyber-red: #ff003c;
+  
+  --animate-blink: blink 1s step-end infinite;
+  --animate-glow: glow 2s ease-in-out infinite alternate;
+  --animate-matrix: matrix 20s linear infinite;
+  --animate-glitch-anim: glitch-anim 2s infinite linear alternate-reverse;
+  --animate-glitch-anim-2: glitch-anim-2 3s infinite linear alternate-reverse;
+  
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  @keyframes glow {
+    from { box-shadow: 0 0 10px #00ff41, 0 0 20px #00ff41; }
+    to { box-shadow: 0 0 20px #00ff41, 0 0 30px #00ff41; }
+  }
+  @keyframes glitch-anim {
+    0% { clip-path: inset(20% 0 80% 0); }
+    20% { clip-path: inset(60% 0 10% 0); }
+    40% { clip-path: inset(40% 0 50% 0); }
+    60% { clip-path: inset(80% 0 5% 0); }
+    80% { clip-path: inset(10% 0 70% 0); }
+    100% { clip-path: inset(30% 0 20% 0); }
+  }
+  @keyframes glitch-anim-2 {
+    0% { clip-path: inset(10% 0 60% 0); }
+    20% { clip-path: inset(30% 0 20% 0); }
+    40% { clip-path: inset(70% 0 10% 0); }
+    60% { clip-path: inset(20% 0 50% 0); }
+    80% { clip-path: inset(50% 0 30% 0); }
+    100% { clip-path: inset(5% 0 80% 0); }
+  }
+}
+
+body {
+  background-color: #020202;
+  color: #e5e5e5;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+::-webkit-scrollbar-thumb {
+  background: #00ff41;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00cc33;
+}
+
+.glass-panel {
+  background: rgba(10, 10, 10, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(0, 255, 65, 0.2);
+}
+
+.text-shadow-neon {
+  text-shadow: 0 0 5px rgba(0, 255, 65, 0.5);
+}
+
+.text-shadow-cyan {
+  text-shadow: 0 0 5px rgba(0, 243, 255, 0.5);
+}
+
+.glitch {
+  position: relative;
+}
+.glitch::before, .glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+.glitch::before {
+  left: 2px;
+  text-shadow: -1px 0 #ff003c;
+  clip-path: inset(24% 0 43% 0);
+  animation: var(--animate-glitch-anim);
+}
+.glitch::after {
+  left: -2px;
+  text-shadow: -1px 0 #00f3ff;
+  clip-path: inset(78% 0 12% 0);
+  animation: var(--animate-glitch-anim-2);
+}
