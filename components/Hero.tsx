@@ -138,7 +138,7 @@ const Hero: React.FC = () => {
           >
             <div className="w-full h-full rounded-full bg-cyber-dark flex items-center justify-center overflow-hidden border-4 border-cyber-black">
               <img
-                src="https://picsum.photos/seed/hacker/400/400"
+                src="./public/profile.png"
                 alt="Profile"
                 className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-all duration-500 hover:scale-110"
                 referrerPolicy="no-referrer"
