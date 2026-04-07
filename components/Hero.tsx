@@ -46,7 +46,7 @@ const Hero: React.FC = () => {
       <div className="absolute inset-0 z-0">
         <div className="absolute top-20 left-10 w-72 h-72 bg-cyber-green/5 rounded-full blur-[100px]"></div>
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-cyber-cyan/5 rounded-full blur-[100px]"></div>
-        <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20"></div>
+        <div className="absolute inset-0 bg-[url('https://drive.google.com/file/d/1vj5yOooVT2YSZ0xfbRflXxwnUnhHICJS/view?usp=drive_link')] opacity-20"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10 w-full grid md:grid-cols-2 gap-12 items-center">
@@ -117,7 +117,7 @@ const Hero: React.FC = () => {
               <ArrowRight size={18} />
             </a>
             <a
-              href="https://www.w3.org/WAI/ER/tests/xhtml/testfiles/resources/pdf/dummy.pdf"
+              href="https://drive.google.com/file/d/1-niz_JXXkokVrg_0q5knwzycKtBh424-/view?usp=drive_link"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-3 border border-gray-700 text-gray-300 font-bold rounded-sm hover:border-gray-500 hover:bg-gray-800/50 transition-colors flex items-center justify-center gap-2"
