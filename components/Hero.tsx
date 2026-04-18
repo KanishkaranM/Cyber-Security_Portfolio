@@ -117,7 +117,7 @@ const Hero: React.FC = () => {
               <ArrowRight size={18} />
             </a>
             <a
-              href="https://drive.google.com/file/d/1-niz_JXXkokVrg_0q5knwzycKtBh424-/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1jLKKbRlCaVROfJSe4CPC6jbtKtIsgwwq/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-3 border border-gray-700 text-gray-300 font-bold rounded-sm hover:border-gray-500 hover:bg-gray-800/50 transition-colors flex items-center justify-center gap-2"
